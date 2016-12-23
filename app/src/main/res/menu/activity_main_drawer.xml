@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_home"
+            android:title="@string/my_profile_naw_drawer_item" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/person_icon"
+            android:title="@string/friends_naw_drawer_item" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/messages_naw_drawer_item" />
+        <item
+            android:id="@+id/nav_games"
+            android:icon="@drawable/ic_puzzle"
+            android:title="@string/games_naw_drawer_item" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="@string/search_naw_drawer_item" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_edit_profile"
+                android:icon="@drawable/ic_edit"
+                android:title="@string/edit_profile" />
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_action_name"
+                android:title="@string/log_out" />
+        </menu>
+    </item>
+
+</menu>

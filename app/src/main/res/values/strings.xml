@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">BulbasaurAndroidClient</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="default_localhost_address_on_emulator">http://10.0.2.2:5001/api/</string>
+    <string name="default_localhost_address_on_emulator_for_media">http://10.0.2.2:5001</string>
+
+    <!-- AUTHORIZATION START -->
+    <string name="error_message">Ups something gone bad, please try again!!!</string>
+
+    <string name="btn_login">Login</string>
+    <string name="btn_sign_up">Sign up</string>
+    <string name="btn_back">Back</string>
+    <string name="et_email_hint">Email</string>
+    <string name="et_password_hint">Password</string>
+    <string name="et_password_repeat_hint">Repeat password</string>
+    <string name="et_name_hint">Name</string>
+    <string name="et_surname_hint">Surname</string>
+    <string name="title_activity_authorization">AuthorizationActivity</string>
+    <string name="app_name_bulbasaur">Bulbasaur</string>
+    <string name="token">TOKEN</string>
+    <string name="search_naw_drawer_item">Search</string>
+    <string name="sign_out">Sign out</string>
+    <string name="no_internet_connection">No internet connection!!!</string>
+
+    <string name="full_name">Full name:</string>
+    <string name="city">City: Ivano Frankivsk</string>
+    <string name="about">About:</string>
+    <string name="default_friends_count">0</string>
+    <string name="friends_you_got">friends you got ... </string>
+    <string name="blank_field">This field can NOT be blank</string>
+    <string name="sign_up_success">Sign up success</string>
+    <string name="games_naw_drawer_item">Games</string>
+    <string name="friends_naw_drawer_item">Friends</string>
+    <string name="my_profile_naw_drawer_item">My Profile</string>
+    <string name="messages_naw_drawer_item">Messages</string>
+    <string name="send">Send</string>
+    <string name="type_message_here">Type message here...</string>
+    <string name="noone_play_this_game">Sorry, no one play this game!</string>
+    <string name="error_occurs">Sorry, some error occurs!</string>
+    <string name="games_count">Games count: </string>
+    <string name="about_ed_hint">About</string>
+    <string name="address_ed_edit_fragment">Address</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save">Save</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="download_notification">"Download "</string>
+    <string name="download_progress">Download in progress</string>
+    <string name="log_out">Log out</string>
+    <string name="exit_message">Press one more time to exit</string>
+    <string name="empty_dialog">You don`t have messages with this user.\n Write one to become friends</string>
+    <string name="login_not_valid">Email or password is not correct!</string>
+
+    <!-- AUTHORIZATION END -->
+</resources>

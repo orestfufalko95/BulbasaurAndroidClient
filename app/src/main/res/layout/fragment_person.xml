@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryBackgroundColor"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/default_person"
+            android:scaleType="center"
+            android:id="@+id/image_view"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/pinkColor"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:background="@color/$blackColor"
+            android:textColor="@color/greyLightColor"
+            android:textAlignment="textStart"
+            android:text="@string/full_name"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:id="@+id/full_name_txt_vw"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greyLightColor"
+            android:background="@color/$blackColor"
+            android:gravity="end"
+            android:text="@string/city"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:id="@+id/city_txt_vw"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/greyLightColor"
+            android:id="@+id/about_txt_vw"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:maxLines="4"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send message"
+            android:background="@drawable/message_button"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/send_message_person_fragment"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/friends_rel_layout_person_fragment"
+            android:weightSum="5"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:paddingLeft="8dp"
+                android:paddingRight="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/default_friends_count"
+                android:id="@+id/friends_count_txt_vw_person_fragment"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/friends_you_got"
+                android:layout_gravity="center"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:id="@+id/random_friends_lin_layout_person_fragment"
+                android:clickable="true"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/greyLightColor"
+                    android:src="@mipmap/default_person"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-8dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/greyLightColor"
+                    android:src="@mipmap/default_person"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-8dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/greyLightColor"
+                    android:src="@mipmap/default_person"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/greyLightColor"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/games_count"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/game_count_txt_vw_person_fragment"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/games_recycler_view_person_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="primaryColor">#00b98d</color>
+    <color name="friendColor">#ADD8E6</color>
+    <color name="primaryDarkColor">#008162</color>
+    <color name="pinkColor">#fd8273</color>
+    <color name="greenColor">#22b86e</color>
+    <color name="$blackColor">#282828</color>
+    <color name="$greyColor">#393836</color>
+    <color name="greyLightColor">#c6c6c6</color>
+    <color name="$textColor">#625e5b</color>
+    <color name="primaryBackgroundColor">#f4f0e7</color>
+    <color name="errorColor">#FF0000</color>
+
+</resources>
